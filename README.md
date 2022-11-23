@@ -1,6 +1,6 @@
 # womanup-todo
 
-## *[Watch Demo](https://blah-blog-frontend-kaiseridze.vercel.app/ "Link to demo")*
+## *[Watch Demo](https://womanup-crud.web.app "Link to demo")*
 
 **About functionality:** 
 * Create task
