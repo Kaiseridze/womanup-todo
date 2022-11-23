@@ -1,0 +1,15 @@
+@import "../../../styles/vars.less";
+
+.input {
+  background-color: @blue__soft-color;
+  color: @black-color;
+  border: 1px solid rgba(177, 177, 177, 0.4);
+  border-radius: 5px;
+  outline: none;
+  font-size: 20px;
+  padding: 10px;
+  transition: 0.15s linear;
+  &:focus {
+    box-shadow: 2px 2px 12px 2px spin(lighten(@blue-color, 3%), 17);
+  }
+}

@@ -1,0 +1,29 @@
+@import "../../../styles/vars.less";
+
+.card {
+  position: relative;
+  max-width: 600px;
+  min-height: 450px;
+  margin: 0 auto;
+  padding: 10px;
+  border: 1px solid #000;
+  border-radius: 15px;
+  background-color: @card-color;
+  &__title {
+    text-align: center;
+    color: @text-color;
+    margin: 10px 0;
+  }
+  &__body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  &__close {
+    color: @text-color;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    cursor: pointer;
+  }
+}

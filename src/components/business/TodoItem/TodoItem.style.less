@@ -1,0 +1,75 @@
+@import "../../../styles/vars.less";
+
+.todo-item {
+  position: relative;
+  border: 1px solid @blue__soft-color;
+  border-radius: 25px;
+  box-shadow: 1px 3px 14px 6px @blue__soft-color;
+  padding: 10px;
+  margin-bottom: 30px;
+  overflow: hidden;
+  transition: 0.2s ease-out;
+  &.expired {
+    background-color: @expired-color;
+    border-color: @expired-color;
+    box-shadow: 1px 3px 14px 6px @expired-color;
+  }
+  &.checked {
+    background-color: @checked-color;
+    border-color: @checked-color;
+    box-shadow: 1px 3px 14px 6px @checked-color;
+  }
+
+  &.checked,
+  &.expired {
+    .todo-item {
+      &__title,
+      &__text,
+      &__icon,
+      &__expiring,
+      &__ref {
+        color: @card-color;
+      }
+    }
+  }
+
+  &__title {
+    text-align: center;
+    font-size: 18px;
+  }
+  &__main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  &__text {
+    font-size: 18px;
+    color: @text-color;
+  }
+  &__ref {
+    color: @blue-color;
+    cursor: pointer;
+    border-bottom: 1px solid @card-color;
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__icon + &__icon {
+    margin-left: 15px;
+  }
+  &__icon {
+    cursor: pointer;
+    transition: 0.2s linear;
+    &:hover {
+      transform: scale(1.25);
+    }
+  }
+
+  .checkbox {
+    margin: 0;
+  }
+}
